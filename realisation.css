@@ -1,0 +1,122 @@
+/* Mise en page générale */
+body {
+  background: #fff8f0;
+  color: #333;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Titres principaux */
+main h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  color: #ff6b6b;
+  letter-spacing: 2px;
+}
+
+main h2 {
+  color: #f7a072;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  border-bottom: 2px solid #ffe0b2;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Section fan-content */
+.fan-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Cartes pour fanarts et cosplay */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(247, 160, 114, 0.15);
+  overflow: hidden;
+  width: 260px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(255, 107, 107, 0.18);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 2px solid #ffe0b2;
+}
+
+.card p {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Listes de fanfictions et vidéos */
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+section ul li {
+  background: #fff;
+  border-left: 5px solid #ff6b6b;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(247, 160, 114, 0.09);
+  font-size: 1.05rem;
+}
+
+section ul li a {
+  color: #f7a072;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+section ul li a:hover {
+  color: #ff6b6b;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .fan-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .card {
+    width: 90vw;
+    max-width: 340px;
+  }
+  main h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Footer personnalisé */
+footer {
+  background: #ff6b6b;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 0;
+  margin-top: 3rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
